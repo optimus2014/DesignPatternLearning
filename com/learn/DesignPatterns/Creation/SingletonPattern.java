@@ -40,9 +40,13 @@ class LazySingleton{
     private Integer score = 0;
     private LazySingleton(){}
 
+    // 使用synchronized，做到线程安全，只在ob为空，需要实例化对象时，添加synchronized线程锁
     public static LazySingleton getObject(){
         if (ob == null){
-            ob = new LazySingleton();
+            synchronized (ob) {
+                ob = new LazySingleton();
+            }
+
         }
         return ob;
     }
