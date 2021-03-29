@@ -9,5 +9,7 @@ package com.learn.DesignPatterns;
 public class main {
     public static void main(String[] args) {
         System.out.println("Hello,设计模式.");
+
+        // 创建 本地文件备份
     }
 }
