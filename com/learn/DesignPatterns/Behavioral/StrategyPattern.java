@@ -7,6 +7,8 @@ package com.learn.DesignPatterns.Behavioral;
  * 1.策略接口：定义策略行为规范
  * 2.具体策略实现类
  * 3.策略“窗口”：用于提供给客户端，策略的使用方法
+ *
+ * 策略模式的管理窗口，也可以不用，和工厂模式结合使用。
  */
 public class StrategyPattern {
     public static void main(String[] args) {
