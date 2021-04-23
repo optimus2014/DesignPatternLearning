@@ -12,7 +12,7 @@ package com.learn.DesignPatterns.Structural;
 public class ProxyPattern {
     public static void main(String[] args) {
         System.out.println("展示代理模式");
-        Proxy p = new Proxy();
+        ProxyInterface p = new Proxy();
         p.run();
     }
 }
